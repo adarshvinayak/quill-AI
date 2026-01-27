@@ -321,7 +321,7 @@ export default function LandingPage() {
         >
           <BrutalCard className="!bg-white border-4 border-black max-w-3xl mx-auto">
             <h3 className="font-black text-3xl mb-6 text-center uppercase !text-highvisYellow">
-              The Quill Difference
+              The Quillion Difference
             </h3>
             <ul className="space-y-3 font-bold text-lg !text-gray-700">
               <li className="flex items-start gap-3">

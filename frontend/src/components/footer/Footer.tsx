@@ -37,7 +37,7 @@ export default function Footer() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h4 className="font-black text-xl mb-4 uppercase">About Quill AI</h4>
+              <h4 className="font-black text-xl mb-4 uppercase">About Quillion</h4>
               <p className="font-bold text-gray-700">
                 Transform thousands of comments into actionable intelligence with AI-powered analysis.
               </p>
@@ -78,10 +78,10 @@ export default function Footer() {
               <div className="flex items-center gap-2 text-gray-700">
                 <Mail size={20} />
                 <a
-                  href="mailto:hello@quillai.com"
+                  href="mailto:hello@quillion.com"
                   className="font-bold hover:text-electricBlue transition-colors"
                 >
-                  hello@quillai.com
+                  hello@quillion.com
                 </a>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function Footer() {
 
           <div className="border-t-4 border-black pt-8">
             <p className="text-center font-bold text-gray-700">
-              © 2024 Quill AI. All rights reserved.
+              © 2024 Quillion. All rights reserved.
             </p>
           </div>
         </div>

@@ -7,7 +7,7 @@ import { DemoProvider } from './contexts/DemoContext';
 import { checkIsDemoMode } from './contexts/DemoContext';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
-  const isAuthenticated = localStorage.getItem('quill_auth') === 'authenticated';
+  const isAuthenticated = localStorage.getItem('quillion_auth') === 'authenticated';
   const isDemoMode = checkIsDemoMode();
   
   // Allow access in demo mode or if authenticated

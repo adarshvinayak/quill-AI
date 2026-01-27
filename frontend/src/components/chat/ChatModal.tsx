@@ -58,7 +58,7 @@ export default function ChatModal({ isOpen, onClose, analysisId }: ChatModalProp
           >
             <div className="flex justify-between items-center p-6 border-b-4 border-black">
               <div className="flex items-center gap-4">
-                <h2 className="text-3xl font-black uppercase">Ask Quill AI</h2>
+                <h2 className="text-3xl font-black uppercase">Ask Quillion AI</h2>
                 <select
                   value={selectedModel}
                   onChange={(e) => setSelectedModel(e.target.value as AIModel)}
@@ -103,7 +103,7 @@ export default function ChatModal({ isOpen, onClose, analysisId }: ChatModalProp
                     }`}
                   >
                     <p className="text-xs font-black uppercase mb-2">
-                      {message.role === 'user' ? 'YOU' : 'QUILL AI'}
+                      {message.role === 'user' ? 'YOU' : 'QUILLION AI'}
                     </p>
                     <p className="whitespace-pre-wrap font-bold">{message.content}</p>
                   </div>
@@ -113,7 +113,7 @@ export default function ChatModal({ isOpen, onClose, analysisId }: ChatModalProp
               {loading && (
                 <div className="flex justify-start">
                   <div className="bg-white brutal-border brutal-shadow-sm p-4">
-                    <p className="text-xs font-black uppercase mb-2">QUILL AI</p>
+                    <p className="text-xs font-black uppercase mb-2">QUILLION AI</p>
                     <p className="font-mono font-bold">
                       Analyzing<span className="animate-pulse">_</span>
                     </p>
@@ -138,7 +138,7 @@ export default function ChatModal({ isOpen, onClose, analysisId }: ChatModalProp
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={handleKeyPress}
-                  placeholder="Ask Quill anything..."
+                  placeholder="Ask Quillion anything..."
                   className="flex-1 h-12 px-4 brutal-border brutal-shadow-sm bg-white text-lg focus:outline-none focus:brutal-shadow"
                 />
                 <BrutalButton

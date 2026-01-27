@@ -21,7 +21,7 @@ export default function LoginPage() {
 
     setTimeout(() => {
       if (username === 'admin' && password === 'admin123') {
-        localStorage.setItem('quill_auth', 'authenticated');
+        localStorage.setItem('quillion_auth', 'authenticated');
         navigate('/dashboard');
       } else {
         setError('Invalid credentials');
@@ -47,7 +47,7 @@ export default function LoginPage() {
           transition={{ duration: 0.3 }}
         >
           <div className="text-center mb-8">
-            <h1 className="text-5xl font-black mb-4">QUILL</h1>
+            <h1 className="text-5xl font-black mb-4">QUILLION</h1>
             <BrutalBadge variant="yellow" className="mb-4">
               BETA ACCESS
             </BrutalBadge>

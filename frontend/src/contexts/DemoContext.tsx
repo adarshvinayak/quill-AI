@@ -14,11 +14,11 @@ export function DemoProvider({ children }: { children: ReactNode }) {
     setIsDemoMode(isDemo);
     // Store in localStorage for persistence across routes
     if (isDemo) {
-      localStorage.setItem('quill_demo_mode', 'true');
+      localStorage.setItem('quillion_demo_mode', 'true');
       // Set demo auth flag
-      localStorage.setItem('quill_auth', 'authenticated');
+      localStorage.setItem('quillion_auth', 'authenticated');
     } else {
-      localStorage.removeItem('quill_demo_mode');
+      localStorage.removeItem('quillion_demo_mode');
     }
   };
 
@@ -39,7 +39,7 @@ export function useDemoMode() {
 
 // Helper to check if currently in demo mode
 export function checkIsDemoMode(): boolean {
-  return localStorage.getItem('quill_demo_mode') === 'true';
+  return localStorage.getItem('quillion_demo_mode') === 'true';
 }
 
 
